@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Songs</title>
+  </head>
+  <body>
+    <h1>Song List:</h1>
+    <br>
+    <% @songs.each do |song| %>
+      <a href="/songs/<%= song.slug %>"><%= song.name %></a><br>
+    <% end %>
+  </body>
+</html>
